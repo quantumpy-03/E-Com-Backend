@@ -8,20 +8,13 @@ schema_view = get_schema_view(
     openapi.Info(
         title="Project API",
         default_version="v1",
-        description="""
-        API documentation for the E-commerce project.
-
-        To test protected endpoints that require authentication:
-        1.  Use the `/api/drf/v1/login/` endpoint with your credentials to get an `access` token.
-        2.  Click the green **Authorize** button on this page.
-        3.  In the dialog that appears, enter `Bearer <your_access_token>` into the value field.
-        4.  Click **Authorize** and close the dialog. Your requests will now be authenticated.
-    """,
+        description="""Project API documentation.""",
         contact=openapi.Contact(email="contact@example.com"),
         license=openapi.License(name="BSD License"),
     ),
     public=True,
     permission_classes=(permissions.AllowAny,),
+    url="https://8000-firebase-e-com-backendgit-1770029725151.cluster-osvg2nzmmzhzqqjio6oojllbg4.cloudworkstations.dev/",
 )
 
 urlpatterns = [
